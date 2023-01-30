@@ -5,7 +5,7 @@ import { HandlerEvent, HandlerContext } from "@netlify/functions";
 dotenv.config();
 
 export async function handler(event: HandlerEvent, context: HandlerContext) {
-
+  // TODO: this didn't work at all
   if (!process.env.ABLY_API_KEY) {
     return {
       statusCode: 500,

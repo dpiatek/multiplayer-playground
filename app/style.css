@@ -1,3 +1,20 @@
-body {
-  background-color: antiquewhite;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes enter-stat {
+  0% {
+    background-color: transparent;
+  }
+
+  100% {
+    background-color: coral;
+  }
+}
+
+.animate-enter-stat {
+  animation-name: enter-stat;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
