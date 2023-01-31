@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prepare": "cd api/ably-token-request && npm install",
+    "prepare": "cd api/ably-token-request && npm install && cd ../liveblocks-auth && npm install",
     "dev:app": "vite",
     "start": "netlify dev -c \"npm run dev:app\" --targetPort 8080",
     "test": "npm run test:app",
@@ -27,6 +27,8 @@
   },
   "dependencies": {
     "@ably-labs/react-hooks": "^2.0.11",
+    "@liveblocks/client": "^0.19.8",
+    "@liveblocks/react": "^0.19.8",
     "ably": "^1.2.29",
     "dotenv": "^16.0.1",
     "nanoid": "^3.3.4",

@@ -19,10 +19,14 @@ export default defineConfig({
     emptyOutDir: true,
     rollupOptions: {
       input: {
-        main: resolve(__dirname, "index.html"),
+        main: resolve(__dirname, "/index.html"),
         "ably-presence-playground": resolve(
           __dirname,
-          "ably-presence-playground/index.html"
+          "/ably-presence-playground/index.html"
+        ),
+        "avatar-stack/liveblocks": resolve(
+          __dirname,
+          "/avatar-stack/liveblocks/index.html"
         ),
       },
     },
